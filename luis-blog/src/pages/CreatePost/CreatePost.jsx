@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import styles from "./CreatePost.module.css";
 
@@ -115,3 +116,15 @@ const CreatePost = () => {
 };
 
 export default CreatePost;
+=======
+import React from 'react'
+import styles from './CreatePost.module.css'
+
+const CreatePost = () => {
+  return (
+    <div><h1>CreatePost</h1></div>
+  )
+}
+
+export default CreatePost
+>>>>>>> 6d8f552d73ff3dcbcc4d27cc6ad096e346018d29

@@ -5,6 +5,9 @@ import { useFetchDocuments } from "../../hooks/useFetchDocuments";
 // CSS
 import styles from "./Home.module.css";
 
+//components
+import PostDetail from "../../components/PostDetail";
+
 const Home = () => {
   const { documents: posts, loading } = useFetchDocuments("posts");
   const [query, setQuery] = useState();
@@ -36,7 +39,7 @@ const Home = () => {
             </Link>
           </div>
         )}
-        {posts && posts.map((post) => <h2>{post.title}</h2>)}
+        <PostDetail/>
       </div>
     </div>
   );
