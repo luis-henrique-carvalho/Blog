@@ -12,14 +12,20 @@ const Home = () => {
   const { documents: posts, loading } = useFetchDocuments("posts");
   const [query, setQuery] = useState();
 
+  const navigate = useNavigate()
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(query) {
+      return navigate(`/search?q=${query}`)
+    }
   };
 
   return (
     <div className={styles.home}>
       <h1>Veja os nossos posts mais recentes</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.search_form}>
         <input
           type="text"
           placeholder="Ou busque por tags..."
@@ -30,7 +36,7 @@ const Home = () => {
       </form>
 
       <div className={styles.noposts}>
-      {loading && <p>Carregando...</p>}
+        {loading && <p>Carregando...</p>}
         {posts && posts.length === 0 && (
           <div className={styles.noposts}>
             <p>Não foram encontrados posts</p>
@@ -39,7 +45,7 @@ const Home = () => {
             </Link>
           </div>
         )}
-        <PostDetail/>
+        {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
       </div>
     </div>
   );
