@@ -53,7 +53,6 @@ const Register = () => {
           <input
             type="text"
             name="displayName"
-            onSubmit={handleSubmit}
             required
             placeholder="Nome do usuário"
             value={displayName}

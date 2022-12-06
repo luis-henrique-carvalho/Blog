@@ -16,14 +16,14 @@
 .search_form input {
   margin-right: 10px;
   width: 50%;
-} 
+}
 
 .noposts {
   text-align: center;
 }
 
 .noposts p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 .noposts a {

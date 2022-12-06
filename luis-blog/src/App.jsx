@@ -21,6 +21,7 @@ import Footer from "./components/Footer";
 
 // Context
 import { AuthProvider } from "./context/AuthContext";
+import Post from "./pages/Post/Post";
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -49,6 +50,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/posts/:id" element={<Post />} />
               <Route
                 path="/login"
                 element={!user ? <Login /> : <Navigate to={"/"} />}
@@ -65,7 +67,6 @@ function App() {
                 path="/dashboard"
                 element={user ? <Dashboard /> : <Navigate to={"/login"} />}
               />
-              
             </Routes>
           </div>
           <Footer />

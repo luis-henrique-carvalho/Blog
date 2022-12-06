@@ -1,5 +1,7 @@
 .post_detail {
   margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .post_detail img {
