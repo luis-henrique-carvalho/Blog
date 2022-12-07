@@ -9,13 +9,9 @@ import { useDeleteDocument } from "../../hooks/useDeleteDocuments";
 const Dashboard = () => {
   const { user } = useAuthValue();
   const uid = user.uid;
-  console.log(uid);
 
   const { documents: posts, loading } = useFetchDocuments("posts", null, uid);
-  console.log(posts);
   const { deleteDocument } = useDeleteDocument("posts");
-
-  
 
   if (loading) {
     return <p>Carregando</p>;
