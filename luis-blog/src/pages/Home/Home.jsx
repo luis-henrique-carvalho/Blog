@@ -16,7 +16,7 @@ const Home = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     if(query) {
       return navigate(`/search?q=${query}`)
     }
