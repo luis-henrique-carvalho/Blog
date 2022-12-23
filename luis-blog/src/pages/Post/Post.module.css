@@ -1,14 +1,19 @@
 .post_container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.post_container p {
+.post_container > p {
   text-align: justify;
+  width: 600px;
 }
 
 .post_container h3 {
   margin-bottom: 0.2em;
 }
+
 
 .post_container img {
  max-width: 600px;
@@ -30,7 +35,14 @@
 
 /* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
 @media screen and (max-width: 1024px) {
+  .post_container > p {
+    
+    width: 500px;
+  }
   
+  .post_container img {
+   max-width: 500px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -39,9 +51,12 @@
    }
 
    .post_container {
-    width: 280px;
+    max-width: 280px;
    }
- 
+
+   .post_container > p {
+    max-width: 280px;
+   }
     
   }
 
