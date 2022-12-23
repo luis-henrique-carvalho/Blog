@@ -29,9 +29,7 @@ Gym Map é uma aplicação full stack web criado com React.js no front e FireBas
 - HTML / CSS / JS 
 - ReactJS
 
-## Principais Bibliotecas 
-- Geolib
-# Como executar o projeto
+## Como executar o projeto
 
 ```bash
 # clonar repositório
