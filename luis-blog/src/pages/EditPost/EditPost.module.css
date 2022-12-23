@@ -21,3 +21,21 @@
   max-width: 100%;
   margin-bottom: 1em;
 }
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+  .edit_post form {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+}
+
