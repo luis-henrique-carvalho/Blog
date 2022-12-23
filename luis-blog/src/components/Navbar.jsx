@@ -18,8 +18,7 @@ const Navbar = () => {
           <NavLink
             to={"/"}
             className={({ isActive }) => (isActive ? styles.active : "")}
-            end
-          >
+            end>
             Home
           </NavLink>
         </li>
@@ -28,17 +27,15 @@ const Navbar = () => {
             <li>
               <NavLink
                 to={"/posts/create"}
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
-                Novo Post
+                className={({ isActive }) => (isActive ? styles.active : "")}>
+                Novo Post{" "}
               </NavLink>
             </li>
 
             <li>
               <NavLink
                 to={"/dashboard"}
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
+                className={({ isActive }) => (isActive ? styles.active : "")}>
                 Dashboard
               </NavLink>
             </li>
@@ -49,8 +46,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to={"/login"}
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
+                className={({ isActive }) => (isActive ? styles.active : "")}>
                 Entrar
               </NavLink>
             </li>
@@ -58,8 +54,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to={"/register"}
-                className={({ isActive }) => (isActive ? styles.active : "")}
-              >
+                className={({ isActive }) => (isActive ? styles.active : "")}>
                 Cadastrar
               </NavLink>
             </li>
@@ -69,16 +64,13 @@ const Navbar = () => {
         <li>
           <NavLink
             to={"/about"}
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
+            className={({ isActive }) => (isActive ? styles.active : "")}>
             Sobre
           </NavLink>
         </li>
         {user && (
           <li>
-            <button  onClick={logout}>
-              Sair
-            </button>
+            <button onClick={logout}>Sair</button>
           </li>
         )}
       </ul>

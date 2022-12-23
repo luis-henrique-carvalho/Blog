@@ -5,3 +5,26 @@
 .register p {
   color: #aaa;
 }
+
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+  .register h1 {
+    font-size: 1.5rem;
+  }
+  .register p {
+    font-size: .9rem;
+  }
+  .register form {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+}

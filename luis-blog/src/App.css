@@ -3,3 +3,18 @@
   margin-bottom: 5em;
 }
 
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  .container {
+    min-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -31,3 +31,42 @@
   font-size: 0.8em;
   margin-bottom: 1em;
 }
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  .post_detail img {
+    width: 100%;
+  }
+
+  .post_detail {
+    max-width: 500px;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+
+  .post_detail {
+    max-width: 280px;
+  }
+
+  .post_detail img {
+    width: 100%;
+  }
+
+   .tags {
+    margin-bottom: 0px;
+    display: flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+    
+  }
+
+  .tags p{
+    margin: .5rem .5rem 0 0;
+  }
+
+  .post_detail a  {
+    color: rebeccapurple;
+  }
+}

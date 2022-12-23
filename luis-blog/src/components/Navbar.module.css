@@ -20,6 +20,8 @@
   display: flex;
   list-style: none;
   margin-right: 1em;
+  flex-direction: row;
+  align-items: center;
 }
 
 .links_list li a {
@@ -30,4 +32,26 @@
 .active {
   background-color: var(--color-black);
   color: var(--color-white);
+}
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  .navbar {
+    font-size: 80%;
+    white-space: nowrap;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    font-size: 60%;
+    white-space: nowrap;
+    
+  }
+  .links_list {
+    margin-right: 0px;
+  }
+  
 }

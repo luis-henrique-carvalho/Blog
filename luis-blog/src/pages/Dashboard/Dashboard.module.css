@@ -58,4 +58,32 @@
   font-size: 0.7em;
 }
 
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+}
 
+@media screen and (max-width: 600px) {
+  .post_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .post_header {
+    display: none;
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+
+  .dashboard > p {
+    margin-top: 0;
+    margin-bottom: -0.5rem;
+    font-size: 1.5rem;
+  }
+}

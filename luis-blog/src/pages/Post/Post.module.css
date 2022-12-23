@@ -22,3 +22,19 @@
 .tags span {
   font-weight: bold;
 }
+
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+  .post_container img {
+    max-width: 280px;
+   }
+ 
+    
+  }
+
+

@@ -10,3 +10,26 @@
   margin-bottom: 2em;
   color: #aaa;
 }
+
+/* =============MEDIA QUERIES (MEDIUM DEVICES) =============*/
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .create_post h1 {
+    font-size: 1.5rem;
+  }
+  .create_post p {
+    font-size: .9rem;
+  }
+  .create_post form {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+}
